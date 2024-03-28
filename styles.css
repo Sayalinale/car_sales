@@ -1,0 +1,142 @@
+body {
+  overflow-x: hidden;
+  margin: 0px;
+}
+
+h1.title_heatmap {
+  text-align: center;
+  font-style: italic;
+}
+
+.header_section {
+  padding: 30px;
+  margin: 0px;
+  background: #62d2a2;
+  color: #fff;
+  text-align: center;
+  font-size: 34px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.header {
+  color: #fff;
+  padding: 40px;
+  text-align: center;
+  background: cadetblue;
+  margin: 0px;
+  font-weight: bold;
+  font-size: 36px;
+  font-style: italic;
+}
+
+.row_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#heatmap-container,
+#word-cloud {
+  margin: 0;
+  padding: 0;
+}
+
+.row_container {
+  display: flex;
+  align-items: stretch;
+}
+
+
+.column1,
+.column2 {
+  width: 48%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+rect {
+  stroke: slateblue;
+}
+
+.cell {
+  position: relative;
+}
+
+.tooltip rect {
+  opacity: 1;
+  position: absolute;
+}
+
+.tooltip text {
+  font-size: 12px;
+  font-weight: bold;
+  /*]] text-anchor: middle; */
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.axis text {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+#heatmap-container {
+  overflow: scroll;
+  height: 500px;
+}
+
+/* Style for the word cloud */
+.word {
+  font-family: Impact, Charcoal, sans-serif;
+  font-size: 1em;
+  /*    fill: #2d2d2d; */
+  cursor: pointer;
+}
+
+
+/* #word_cloud {
+  border: 2px solid black;
+} */
+
+div#columncount {
+  display: inline-flex;
+}
+
+#columncount p {
+  width: 31%;
+  border: 2px solid;
+  margin: 10px;
+  padding: 20px;
+  text-align: center;
+}
+
+.word:hover {
+  color: red;
+  font-weight: bold;
+}
+
+.section_second {
+  display: inline-flex;
+  width: 100%;
+  background: #d7fbe8ba;
+}
+
+svg.bar {
+  width: 100%;
+  margin-top: 25px;
+}
+
+div#linecahet {
+  width: 40%;
+  margin: auto;
+}
+
+div#thecircularBarGraph {
+  text-align: center;
+}
