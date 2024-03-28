@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Norway car sales</title>
+  <link rel="stylesheet" href="styles.css">
+
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/d3-cloud@1.2.5/build/d3.layout.cloud.min.js"></script>
+  <script src="script.js"></script>
+</head>
+
+
+<body>
+
+
+  <div class="car_dashboard">
+
+    <div class="header_section">
+      <he class="title">Car Sales Norway</he>
+    </div>
+    <div class="section_first">
+      <div class="row_container">
+        <div class="column1">
+          <div id="heatmap-container">
+            <h1 class="title_heatmap">Number of cars by Companies for each year</h1>
+            <div id="heatmap"></div>
+          </div>
+        </div>
+        <div class="column2">
+          <h1 class="title_heatmap">The Top 20 companies</h1>
+          <div id="word-cloud-container">
+            <div id="word_cloud" style="width: 600px; height: 500px; margin: auto;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section_three">
+      <div id="thecircularBarGraph"> </div>
+    </div>
+    <div class="section_second">
+      <div id="linecahet">
+        <h1 class="title_linechart">Total number of sales per year</h1>
+        <div id="tooltip" class="hidden">
+          Total car sold: <span id="value"></span>
+        </div>
+
+      </div>
+      <div id="barchart"></div>
+
+
+
+
+    </div>
+
+
+
+  </div>
+
+</body>
+
+</html>
